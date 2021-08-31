@@ -10,22 +10,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Bottom Nav Bar V2',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: BottomNavBarV2(),
+      home: CustomBottomNavBar(),
     );
   }
 }
 
-class BottomNavBarV2 extends StatefulWidget {
+class CustomBottomNavBar extends StatefulWidget {
   @override
-  _BottomNavBarV2State createState() => _BottomNavBarV2State();
+  _CustomBottomNavBarState createState() => _CustomBottomNavBarState();
 }
 
-class _BottomNavBarV2State extends State<BottomNavBarV2> {
+class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   int currentIndex = 0;
 
   setBottomBarIndex(index) {
